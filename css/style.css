@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'FuturaBookC';
+    src: url('../fonts/.eot');
+    src: url('../fonts/.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/.woff2') format('woff2'),
+        url('../fonts/.woff') format('woff'),
+        url('../fonts/.ttf') format('truetype'),
+        url('../fonts/.svg#FuturaBookC') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaDemiC';
+    src: url('../fonts/.eot');
+    src: url('../fonts/.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/.woff2') format('woff2'),
+        url('../fonts/.woff') format('woff'),
+        url('../fonts/.ttf') format('truetype'),
+        url('../fonts/.svg#FuturaDemiC') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaMediumC';
+    src: url('../fonts/FuturaMediumC.eot');
+    src: url('../fonts/FuturaMediumC.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaMediumC.woff2') format('woff2'),
+        url('../fonts/FuturaMediumC.woff') format('woff'),
+        url('../fonts/FuturaMediumC.ttf') format('truetype'),
+        url('../fonts/FuturaMediumC.svg#FuturaMediumC') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Yeseva One', cursive;
+}
+
+p {
+    font-family: 'FuturaMediumC', sans-serif;
+    font-size: 40px;
+}
