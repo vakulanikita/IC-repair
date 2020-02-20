@@ -1,23 +1,26 @@
+/* FONT CONNECTION
+==================================================*/
+
 @font-face {
     font-family: 'FuturaBookC';
-    src: url('../fonts/.eot');
-    src: url('../fonts/.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/.woff2') format('woff2'),
-        url('../fonts/.woff') format('woff'),
-        url('../fonts/.ttf') format('truetype'),
-        url('../fonts/.svg#FuturaBookC') format('svg');
+    src: url('../fonts/FuturaBookC.eot');
+    src: url('../fonts/FuturaBookC.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaBookC.woff2') format('woff2'),
+        url('../fonts/FuturaBookC.woff') format('woff'),
+        url('../fonts/FuturaBookC.ttf') format('truetype'),
+        url('../fonts/FuturaBookC.svg#FuturaBookC') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'FuturaDemiC';
-    src: url('../fonts/.eot');
-    src: url('../fonts/.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/.woff2') format('woff2'),
-        url('../fonts/.woff') format('woff'),
-        url('../fonts/.ttf') format('truetype'),
-        url('../fonts/.svg#FuturaDemiC') format('svg');
+    src: url('../fonts/FuturaDemiC.eot');
+    src: url('../fonts/FuturaDemiC.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaDemiC.woff2') format('woff2'),
+        url('../fonts/FuturaDemiC.woff') format('woff'),
+        url('../fonts/FuturaDemiC.ttf') format('truetype'),
+        url('../fonts/FuturaDemiC.svg#FuturaDemiC') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -34,11 +37,177 @@
     font-style: normal;
 }
 
+/* SPECIFICATION
+==================================================*/
+
 body {
-    font-family: 'Yeseva One', cursive;
+    font-family: 'FuturaBookC';
+    /* font-family: 'Yeseva One', cursive;  */
+    font-size: 14px;
+    color: #FFFFFF;
+    /* background-color: orange; */
 }
 
-p {
-    font-family: 'FuturaMediumC', sans-serif;
-    font-size: 40px;
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
+
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #FFFFFF;
+}
+
+/* HEADER
+==================================================*/
+
+.header {
+    background: #131313;
+}
+
+.header__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 82px;
+}
+
+.header__logo {
+    font-family: 'FuturaDemiC';
+    color: #E3B873;
+}
+
+.header__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header__item {
+    color: #FFFFFF;
+    margin-right: 47px;
+}
+
+.header__item:hover,
+.header__item:active {
+    color: #E3B873;
+}
+
+.header__item--active {
+    color: #E3B873 !important;
+}
+
+.header__contact {
+    font-family: 'FuturaDemiC';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+}
+
+.header__phone {
+    border-bottom: 1px solid #E3B873;
+    color: #E3B873;
+}
+
+.header__request-btn {
+    font-size: 13px;
+    text-align: center;
+    line-height: 37px;
+    width: 161px;
+    height: 37px;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+}
+
+.header__row {
+    height: 707px;
+    display: flex;
+    align-items: center;
+}
+
+.header__inst {
+    position: relative;
+    font-family: 'FuturaDemiC';
+    width: 82px;
+    color: #E3B873;
+    transform: rotate(90deg);
+    margin-top: -150px;
+}
+
+.header__inst:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 1.5px;
+    height: 50px;
+    background-color: #E3B873;
+    transform: rotate(90deg);
+    left: 110px;
+    bottom: -17px;
+}
+
+.header__body {
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    height: 100%;
+    width: 100%;
+    background: url(/img/header/1.jpg);
+    
+}
+
+.header__title {
+    font-family: 'Yeseva One';
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+}
+
+.header__title--active {
+    color: #E3B873;
+}
+
+.header__subtitle {
+    font-family: 'FuturaBookC';
+    font-size: 22px;
+    margin-bottom: 41px;
+}
+
+.header__btn-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.header__calculate-btn {
+    font-family: 'FuturaDemiC';
+    height: 51px;
+    width: 207px;
+    line-height: 51px;
+    text-align: center;
+    margin-right: 20px;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+    border-radius: 2px;
+}
+
+.submit-btn {
+    font-family: 'FuturaDemiC';
+    height: 51px;
+    width: 207px;
+    line-height: 51px;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+}
+
+/* TODO: общтй класс для кнопок, выравнить логотип с краем bg у header__body */
