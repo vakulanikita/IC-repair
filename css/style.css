@@ -42,15 +42,8 @@
 
 body {
     font-family: 'FuturaBookC';
-    /* font-family: 'Yeseva One', cursive;  */
     font-size: 14px;
     color: #FFFFFF;
-    /* background-color: orange; */
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
 }
 
 a {
@@ -62,6 +55,28 @@ a:visited,
 a:hover,
 a:active {
     color: #FFFFFF;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.normal-btn {
+    font-family: 'FuturaDemiC';
+    font-size: 13px;
+    text-align: center;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+    border-radius: 2px;
+}
+
+.transparent-btn {
+    font-family: 'FuturaDemiC';
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
 }
 
 /* HEADER
@@ -83,6 +98,13 @@ a:active {
     color: #E3B873;
 }
 
+.header__logo-link:link,
+.header__logo-link:visited,
+.header__logo-link:hover,
+.header__logo-link:active {
+    color: #E3B873;
+}
+
 .header__list {
     display: flex;
     justify-content: space-between;
@@ -90,7 +112,6 @@ a:active {
 }
 
 .header__item {
-    color: #FFFFFF;
     margin-right: 47px;
 }
 
@@ -99,32 +120,32 @@ a:active {
     color: #E3B873;
 }
 
+.header__item:last-child {
+    margin-right: 0;
+}
+
 .header__item--active {
     color: #E3B873 !important;
 }
 
 .header__contact {
-    font-family: 'FuturaDemiC';
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 320px;
+    /* width: 320px; */
 }
 
 .header__phone {
+    font-family: 'FuturaDemiC';
     border-bottom: 1px solid #E3B873;
     color: #E3B873;
+    margin-right: 45px;
 }
 
 .header__request-btn {
-    font-size: 13px;
-    text-align: center;
     line-height: 37px;
     width: 161px;
     height: 37px;
-    background: #E3B873;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-    border-radius: 2px;
 }
 
 .header__row {
@@ -155,19 +176,18 @@ a:active {
 }
 
 .header__body {
-    padding-left: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: left;
+    padding-left: 60px;
     height: 100%;
     width: 100%;
-    background: url(/img/header/1.jpg);
-    
+    background: #131313 url(/img/header/1.jpg) bottom center / cover no-repeat;
 }
 
 .header__title {
-    font-family: 'Yeseva One';
+    font-family: 'Yeseva One', cursive;;
     font-size: 40px;
     text-transform: uppercase;
     margin-bottom: 19px;
@@ -189,25 +209,14 @@ a:active {
 }
 
 .header__calculate-btn {
-    font-family: 'FuturaDemiC';
     height: 51px;
     width: 207px;
     line-height: 51px;
-    text-align: center;
     margin-right: 20px;
-    background: #E3B873;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
-    border-radius: 2px;
+} 
+  
+.header__submit-btn {
+    height: 49px;
+    width: 205px;
+    line-height: 49px;
 }
-
-.submit-btn {
-    font-family: 'FuturaDemiC';
-    height: 51px;
-    width: 207px;
-    line-height: 51px;
-    text-align: center;
-    border: 1px solid #FFFFFF;
-    border-radius: 2px;
-}
-
-/* TODO: общтй класс для кнопок, выравнить логотип с краем bg у header__body */
