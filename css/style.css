@@ -58,7 +58,7 @@ a:active {
 }
 
 .container {
-    width: 80%;
+    width: 88%;
     margin: 0 auto;
 }
 
@@ -84,6 +84,7 @@ a:active {
 
 .header {
     background: #131313;
+    padding-bottom: 107px;
 }
 
 .header__navigation {
@@ -220,3 +221,19 @@ a:active {
     width: 205px;
     line-height: 49px;
 }
+
+/* 
+    TODO: 1. выравнить header__logo с краем header__body как макете 
+    (navigation и header__row в одном блоке, header__inst - в другом => 
+    будет div родитель с display: flex;) 
+    2. кнопка scroll down, придумать её функционал
+*/
+
+/* SL-PROJECT
+==================================================*/
+
+.sl-project {
+    background-color: #131313;
+}
+
+
